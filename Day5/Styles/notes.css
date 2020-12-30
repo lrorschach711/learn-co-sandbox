@@ -1,0 +1,22 @@
+/*BOX MODEL*/
+
+div {
+  background: aqua;
+  width: 100px;   /*is only measuring content area, not border or padding*/
+  height: 100px;
+  padding: 20px 30px 40px 50px;
+      /*1 value -- all sides*/
+      /*2 values -- top & bottom, left & right*/
+      /*3 values -- top, left & right, bottom*/
+      /*4 values -- top, right, bottom, left*/
+    border: 1px dashed black;
+  margin: 20px;             /* the space between elements*/
+  
+  
+  
+  /*SCALING ELEMENTS*/
+
+/*  Fixed -- px      */
+/*  Elastic -- em    */
+/*  Fluid -- %       */
+/*  Min/Max Sizing   */

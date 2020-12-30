@@ -1,0 +1,53 @@
+h1 {
+  background-color: lightblue;
+  display: inline-block;
+}
+
+p {
+  background-color: lightblue;
+  margin-top: 32px;
+  margin-bottom: 32px;
+  display:inline-block;
+}
+
+span {
+  background-color: red;
+  padding: 8px;
+  display: inline-block;
+}
+
+header {
+  background: green;
+  width: 50%;           /* this helps resize when going to mobile*/
+  min-width: 400px;     /* this will make sure it doesn't shrink too small */    
+  position: fixed;      /* fixed -- will keep it on view while scrolling */
+                        /* absolute -- it will stay in that exact spot */
+                        /* relative -- it will position itself relative to whatever container you place it in (add top, bottom, etc) */
+  top: 10px;
+}
+
+nav {
+  background: purple;
+}
+
+article {
+  background: orange;
+  float: left;
+}
+
+aside {
+  background: blue;
+  float: right;
+}
+
+footer {
+  clear: both;   /* looks at everything above and below, and if there's a float:left & float:right, it will move below it instead of next to it */
+}
+
+
+
+@media only screen and (max-width:600px) {   /* This creates a scenario specific to mobile */
+  nav {
+    background: yellow;
+  }
+}
